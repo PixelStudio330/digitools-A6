@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "billing": "/Mo",
+    "badge": "Best Seller",
+    "badgeColor": "bg-[#FFF7ED] text-[#9A3412]",
+    "features": ["Unlimited AI generations", "50+ writing templates", "Grammar checker"],
+    "image": "/products/writing_2327400 1.png"
+  },
+
+   {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+    "price": 49,
+    "billing": "/One-Time",
+    "badge": "Popular",
+    "badgeColor": "bg-[#F5F3FF] text-[#4F39F6]",
+    "features": ["2000+ templates", "Monthly updates", "Commercial license"],
+    "image": "/products/design-tool.png"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
+    "price": 19,
+    "billing": "/Mo",
+    "badge": "New",
+    "badgeColor": "bg-[#F0FDF4] text-[#166534]",
+    "features": ["10M+ assets", "Commercial use", "No attribution"],
+    "image": "/products/camera.png"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
+    "price": 79,
+    "billing": "/Mo",
+    "badge": "Popular",
+    "badgeColor": "bg-[#F5F3FF] text-[#4F39F6]",
+    "features": ["50+ automations", "API access", "Custom workflows"],
+    "image": "/products/operation.png"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes and cover letters that land interviews.",
+    "price": 15,
+    "billing": "/One-Time",
+    "badge": "New",
+    "badgeColor": "bg-[#F0FDF4] text-[#166534]",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "image": "/products/portfolio.png"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "description": "Complete toolkit for creating engaging social media content across all platforms.",
+    "price": 39,
+    "billing": "/Mo",
+    "badge": "Best Seller",
+    "badgeColor": "bg-[#FFF7ED] text-[#9A3412]",
+    "features": ["5000+ assets", "Scheduler included", "Analytics dashboard"],
+    "image": "/products/social-media.png"
+  }
+]

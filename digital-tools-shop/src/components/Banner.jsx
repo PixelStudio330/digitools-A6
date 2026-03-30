@@ -11,7 +11,6 @@ const Banner = () => {
           
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-[#F5F3FF] px-4 py-1.5 rounded-full border border-[#E9D5FF]">
-             {/* Gradient Bullet Point */}
              <div className="w-2 h-2 rounded-full bg-gradient-to-r from-[#4F39F6] to-[#A855F7] shadow-[0_0_8px_rgba(79,57,246,0.4)]"></div>
              
              {/* Gradient Text*/}
