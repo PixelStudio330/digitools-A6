@@ -4,6 +4,7 @@ import Banner from './components/Banner';
 import Stats from './components/Stats';
 import Steps from './components/Steps'; 
 import ProductList from './components/ProductList';
+import Plans from './components/Plans';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -43,6 +44,8 @@ function App() {
       <main>
         <Banner />
         <Stats />
+        
+        {/* Featured Products */}
         <ProductList 
           cart={cart} 
           onAddToCart={addToCart} 
@@ -50,6 +53,9 @@ function App() {
           onCheckout={handleCheckout}
         />
         <Steps /> 
+
+        {/* Subscription Plans */}
+        <Plans />
       </main>
 
       <ToastContainer 
