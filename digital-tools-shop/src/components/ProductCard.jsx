@@ -1,27 +1,48 @@
 import React from 'react';
 
 const ProductCard = ({ product, onAddToCart }) => {
+  const getIconStyles = (id) => {
+    let base = "w-7 h-7";
+    let hoverScale = "group-hover:scale-[1.1]";
+    
+    if ([3, 7, 8, 9].includes(id)) {
+      base = "w-10 h-10 translate-x-[1px] -translate-y-[1px]"; 
+    }
+
+    if (id === 9) {
+      base += " scale-[1.9] ml-[-3px]"; 
+      hoverScale = "group-hover:scale-[2.0]";
+    } else if (id === 7) {
+      base += " scale-[1.2]";
+      hoverScale = "group-hover:scale-[1.3]";
+    } else if (id === 8) {
+      base += " scale-[1.0]"; 
+      hoverScale = "group-hover:scale-[1.15]";
+    } else if (id === 3) {
+      base += " scale-[1.65]";
+      hoverScale = "group-hover:scale-[1.75]";
+    }
+
+    return `${base} ${hoverScale}`;
+  };
+
   return (
-    <div className="bg-white rounded-[24px] border border-gray-100 p-8 shadow-sm hover:shadow-xl hover:shadow-purple-100/50 transition-all duration-300 group flex flex-col h-full">
+    <div className="bg-white rounded-[24px] border border-gray-100 p-8 shadow-sm hover:shadow-xl hover:shadow-purple-100/50 transition-all duration-300 group flex flex-col h-full font-sans">
       
       {/* Header */}
       <div className="flex justify-between items-start mb-6">
        
-        <div className="w-14 h-14 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-purple-50 transition-colors">
+        {/* Subtle gray border + slightly darker background */}
+        <div className="w-14 h-14 rounded-full border border-gray-200/60 bg-white-100 flex items-center justify-center group-hover:bg-purple-50 group-hover:border-purple-100/50 transition-colors">
           <img 
             src={product.image} 
             alt={product.name} 
-            className={`object-contain transition-all duration-300 ${
-              
-              product.id === 3 
-                ? "w-10 h-10 scale-[1.5] translate-x-[2px] -translate-y-[2px]" 
-                : "w-7 h-7"
-            } group-hover:rotate-3`} 
+            className={`object-contain transition-all duration-500 group-hover:rotate-6 ${getIconStyles(product.id)}`} 
           />
         </div>
         
         {product.badge && (
-          <span className={`px-4 py-1.5 rounded-full text-[12px] font-[800] ${product.badgeColor}`}>
+          <span className={`px-4 py-1.5 rounded-full text-[12px] font-[800] ${product.badgeColor} uppercase tracking-wider`}>
             {product.badge}
           </span>
         )}
@@ -46,7 +67,7 @@ const ProductCard = ({ product, onAddToCart }) => {
         <ul className="space-y-4 mb-10">
           {product.features.map((feature, index) => (
             <li key={index} className="flex items-center gap-3 text-[14px] text-[#627382] font-semibold">
-              <div className="flex-shrink-0 w-5 h-5 rounded-full bg-green-50 flex items-center justify-center">
+              <div className="flex-shrink-0 w-5 h-5 rounded-full bg-green-50 flex items-center justify-center border border-green-100">
                 <svg className="w-3.5 h-3.5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="4">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>

@@ -65,5 +65,38 @@
     "badgeColor": "bg-[#FFF7ED] text-[#9A3412]",
     "features": ["5000+ assets", "Scheduler included", "Analytics dashboard"],
     "image": "/products/social-media.png"
+  },
+  {
+    "id": 7,
+    "name": "SEO Master Suite",
+    "description": "Rank higher on Google with advanced keyword research, backlink analysis, and site audits.",
+    "price": 59,
+    "billing": "/Mo",
+    "badge": "Trending",
+    "badgeColor": "bg-[#FEF2F2] text-[#991B1B]",
+    "features": ["Keyword tracker", "Competitor analysis", "Weekly SEO reports"],
+    "image": "/products/seo.png"
+  },
+  {
+    "id": 8,
+    "name": "DevSnippet Library",
+    "description": "A massive collection of reusable React, Next.js, and Tailwind CSS components for developers.",
+    "price": 35,
+    "billing": "/One-Time",
+    "badge": "Popular",
+    "badgeColor": "bg-[#F5F3FF] text-[#4F39F6]",
+    "features": ["500+ Components", "TypeScript support", "Lifetime updates"],
+    "image": "/products/codesnippet.png"
+  },
+  {
+    "id": 9,
+    "name": "Video FX Studio",
+    "description": "Professional-grade video transitions, effects, and stock footage to make your edits pop.",
+    "price": 45,
+    "billing": "/Mo",
+    "badge": "Premium",
+    "badgeColor": "bg-[#FDF2F8] text-[#9D174D]",
+    "features": ["4K overlays", "Drag & drop effects", "Royalty-free audio"],
+    "image": "/products/vid-player.png"
   }
 ]
