@@ -26,7 +26,7 @@ const Steps = () => {
   ];
 
   return (
-    <section className="w-full py-24 bg-white relative overflow-hidden">
+    <section className="w-full py-24 bg-[#F9FAFC] relative overflow-hidden">
       
       
       <div className="max-w-[1400px] mx-auto px-[40px] lg:px-[100px] relative z-10">

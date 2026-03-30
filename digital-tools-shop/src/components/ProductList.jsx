@@ -8,7 +8,7 @@ const ProductList = ({ onAddToCart, onRemoveFromCart, onCheckout, cart = [] }) =
   const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
 
   return (
-    <section className="w-full py-24 bg-[#FAFAFB]">
+    <section className="w-full py-24 bg-white">
       <div className="max-w-[1400px] mx-auto px-[40px] lg:px-[100px]">
         
         {/* Section Header */}
