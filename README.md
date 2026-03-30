@@ -1,161 +1,39 @@
-# 🎯 A-6 Digital Tools Buying Website
+---# 🎯 DigiTools | Premium Digital Assets Marketplace
 
-## 📅 Deadlines
-- 60 Marks: 1st April, 2026 (11:59 PM ⏱️)  
-- 50 Marks: No Deadline for 50 marks.  
-- 30 Marks: Any time after 1st April.  
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
----
+## 📝 Project Overview
+**DigiTools** is a sophisticated, fully responsive digital commerce platform built for the **A-6 Digital Tools Buying Website** assignment. The application provides a seamless interface for users to browse high-quality digital products, manage a dynamic shopping cart, and experience a modern "cozy-web" aesthetic.
 
----
-
-## 🚫 Key Rules
-- Don't ask about mark distribution in the group. We don't provide it.  
-- Don't post assignment feedback after you receive it. If you face any problem or have any complaints then join a support session and discuss it.  
-- Don’t use any lorem ipsum text, rather use relevant and meaningful text content.  
-- You can change the color if you want but remember that it should not be a gobindo color.  
-- Use at least 8 git commits with meaningful messages.  
+**Live Demo:** 
 
 ---
 
-## 🧩 Features & Requirements
+## 🚀 Key Features
 
-### 🧭 Navbar
-- Navbar designed according to Figma  
-- Cart icon displayed (initially empty)  
+### 1. Dynamic Product Ecosystem
+The application features a curated catalog of 9 premium digital tools. Using a robust JSON-based data structure, each product card dynamically renders specific badges (New, Popular, Best Seller), feature lists, and unique scaling logic for high-fidelity PNG icons to ensure a pixel-perfect visual hierarchy.
 
----
+### 2. State-Driven Cart Management
+Implemented a centralized state management system that handles:
+* **Real-time Navigation Updates:** The Navbar cart count reflects the current selection instantly.
+* **Toggling Interface:** A specialized "Main Section" allows users to switch between the Product Grid and the Cart View with persistent data.
+* **Persistent Notifications:** Integrated `React-Toastify` to provide professional feedback for adding items, removing items, and completing the checkout process.
 
-### 🎯 Banner
-- Banner section includes:
-  - Heading  
-  - Description text  
-  - Image  
-  - Buttons  
-
----
-
-### 📊 Stats Section
-- Stats section designed based on Figma  
+### 3. Responsive & Interactive Design
+Engineered with a mobile-first approach using Tailwind CSS. The UI includes:
+* **Interactive Hero & Stats:** A high-impact banner and a detailed stats section designed strictly according to Figma specifications.
+* **Micro-interactions:** Smooth CSS transitions, 500ms hover rotations on icons, and gradient-border effects that enhance the professional user experience.
 
 ---
 
-### 🔄 Main Section & Toggling
-- Design  2 buttons at the center of the section.
-- By clicking Cart,  the cart section will be shown. By default it will show an empty message.
-- By Clicking  Product,  the Products section will be shown. 
-- By Default product section will be visible. 
+## 🛠️ Technologies Used
 
-
----
-
-### 📦 JSON Data
-Create 6–10 product data with:
-- id  
-- name  
-- description  
-- price  
-- period (one-time / monthly / yearly)  
-- tag ( example- popular, new, best seller) 
-- tagType ( example- popular, new, best seller) 
-- features ( array. Example:  ["100+ templates", "ATS optimization", "Export to PDF"] )   
-- icon  
-
-🚩 You can take help of AI Systems for generating a JSON Data
-
----
-
-### 🃏 Product Cards
-- Display all products in a 3-column layout  
-- Each card includes:
-  - Name  
-  - Description  
-  - Price  
-  - Period  
-  - TagType  
-  - Features  
-  - Icon  
-  - Buy Now button  
-
----
-
-### 🛒 Cart Functionality
-- Show selected products in cart  
-- Display total product count in navbar  
-- Cart layout: 1 column  
-- Each cart item includes:
-  - Name  
-  - Icon  
-  - Price  
-  - Remove button  
-- "Proceed to Checkout" button:
-  - Clears all cart items  
-
----
-
-### 🪜 Steps Section
-- Designed according to Figma  
-
----
-
-### 💰 Pricing Section
-- Designed according to Figma  
-
----
-
-### 🦶 Footer
-- Footer designed based on Figma  
-
----
-
-### 📱 Responsive Design
-- Fully responsive across devices  
-- Follow standard responsive practices  
-
----
-
-# 🚀 Challenges Part 
-
-### 🔔 Use a NPM Package React-Toastify
-- Use react toastify to show all the alerts of add to cart, remove, and proceed to checkout. 
-
-
----
-
-### ❌ Implement Selected product remove functionality 
-- On Click Remove Button product will remove from cart section.
-
-- In this section the total of the selected products ( added on the carts) will show here. 
-- Proceed to checkout button will remove all the products from the cart  
-
-
-
----
-
-### 📂 GitHub Repository
-- Create Beautiful Github Readme with following description
-    - Name of your  Project
-    - A little Description
-    - Technology that you use
-    - 3 Features about your project. 
- 
-
----
-## Optional Features: 
-
-1. When you click on a product it increases the cart count in the Navbar and clears it when you click on the proceed to checkout button. 
-2. When clicking on the Buy now Button it shows an “Added to cart” message on the button. 
-
-
-## ⚙️ Technologies Used
-- React.js  
-- Tailwind CSS, DaisyUI 
-- JavaScript (ES6+)  
-- React-Toastify (NPM Package)  
-- JSON (for product data)  
-
----
-
-## 📤 What to submit:
-- GitHub Repository Link:
-- Live Site Link:
+* **Core:** React.js (Functional Components, Hooks)
+* **Styling:** Tailwind CSS, DaisyUI
+* **Notifications:** React-Toastify (NPM)
+* **Icons/Assets:** Custom Digital Assets & Lucide React
+* **Data:** Custom JSON Architecture
+* **Version Control:** Git (8+ Meaningful Commits)
