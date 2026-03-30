@@ -7,8 +7,8 @@
 ## 📝 Project Overview
 **DigiTools** is a sophisticated, fully responsive digital commerce platform built for the **A-6 Digital Tools Buying Website** assignment. The application provides a seamless interface for users to browse high-quality digital products, manage a dynamic shopping cart, and experience a modern "cozy-web" aesthetic.
 
-**Live Demo:** [Insert Your Live Link Here]  
-**Repository:** [Insert Your GitHub Link Here]
+**Live Demo:**  
+**Repository:** https://github.com/PixelStudio330/digitools-A6
 
 ---
 
