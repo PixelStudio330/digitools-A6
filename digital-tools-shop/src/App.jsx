@@ -27,10 +27,15 @@ function App() {
     toast.success("Checkout Successful!");
   };
 
-  return (
-    <div className="min-h-screen bg-white font-sans text-gray-900">
+return (
+    <div className="min-h-screen bg-white font-sans text-gray-900 overflow-x-hidden">
       <Navbar cartCount={cart.length} />
-      <main>
+      
+      {/* REMOVED the flex-col and the max-w div here. 
+          Each component (Banner, Stats, etc.) should now be responsible 
+          for its own internal centering.
+      */}
+      <main className="w-full">
         <Banner />
         <Stats />
         <ProductList 
@@ -44,6 +49,7 @@ function App() {
         <CTA />
         <Footer />
       </main>
+
       <ToastContainer />
     </div>
   );
