@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Banner from './components/Banner';
 import Stats from './components/Stats';
 import Steps from './components/Steps'; 
+import CTA from './components/CTA';
 import ProductList from './components/ProductList';
 import Plans from './components/Plans';
 import { ToastContainer, toast } from 'react-toastify';
@@ -56,6 +57,7 @@ function App() {
 
         {/* Subscription Plans */}
         <Plans />
+        <CTA />
       </main>
 
       <ToastContainer 
