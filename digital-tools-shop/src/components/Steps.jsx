@@ -1,6 +1,4 @@
 import React from 'react';
-
-// Imported PNGs
 import userIcon from '../assets/user.png';
 import boxIcon from '../assets/package.png';
 import rocketIcon from '../assets/rocket.png';
@@ -29,7 +27,7 @@ const Steps = () => {
 
   return (
     <section className="w-full py-24 bg-white relative overflow-hidden">
-      {/* Background is now pure solid white - No polka dots or grids */}
+      
       
       <div className="max-w-[1400px] mx-auto px-[40px] lg:px-[100px] relative z-10">
         
@@ -50,12 +48,12 @@ const Steps = () => {
               key={step.id} 
               className="relative bg-white p-12 rounded-[32px] border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-purple-100/50 transition-all duration-500 group text-center"
             >
-              {/* GRADIENT BADGE - Positioned Top-Right (Not Centered) */}
+              {/* Gradient Badge */}
               <div className="absolute top-6 right-6 w-8 h-8 rounded-full bg-gradient-to-r from-[#4F39F6] to-[#A855F7] flex items-center justify-center shadow-lg shadow-purple-200">
                 <span className="text-white text-[12px] font-bold">{step.id}</span>
               </div>
 
-              {/* Icon Container with PNG */}
+              {/* Icon Container */}
               <div className="w-24 h-24 rounded-full bg-[#F5F3FF] flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-500">
                 <img 
                   src={step.icon} 
