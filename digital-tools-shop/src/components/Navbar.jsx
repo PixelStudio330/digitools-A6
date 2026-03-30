@@ -5,9 +5,6 @@ const Navbar = ({ cartCount }) => {
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 font-sans">
-      {/* FIXED: Removed px-[200px]. 
-         Used px-6 (mobile) and lg:px-12 (desktop) for perfect symmetry.
-      */}
       <div className="max-w-[1400px] mx-auto py-5 px-6 lg:px-12 flex items-center justify-between">
         
         {/* Logo */}

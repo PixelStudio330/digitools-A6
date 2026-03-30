@@ -28,31 +28,27 @@ function App() {
   };
 
 return (
-    <div className="min-h-screen bg-white font-sans text-gray-900 overflow-x-hidden">
-      <Navbar cartCount={cart.length} />
-      
-      {/* REMOVED the flex-col and the max-w div here. 
-          Each component (Banner, Stats, etc.) should now be responsible 
-          for its own internal centering.
-      */}
-      <main className="w-full">
-        <Banner />
-        <Stats />
-        <ProductList 
-          cart={cart} 
-          onAddToCart={addToCart} 
-          onRemoveFromCart={removeFromCart}
-          onCheckout={handleCheckout}
-        />
-        <Steps /> 
-        <Plans />
-        <CTA />
-        <Footer />
-      </main>
+  <div className="min-h-screen bg-white font-sans text-gray-900 relative">
+    <Navbar cartCount={cart.length} />
+    
+    <main className="w-full overflow-x-hidden">
+      <Banner />
+      <Stats />
+      <ProductList 
+        cart={cart} 
+        onAddToCart={addToCart} 
+        onRemoveFromCart={removeFromCart}
+        onCheckout={handleCheckout}
+      />
+      <Steps /> 
+      <Plans />
+      <CTA />
+      <Footer />
+    </main>
 
-      <ToastContainer />
-    </div>
-  );
+    <ToastContainer />
+  </div>
+);
 }
 
 export default App;
